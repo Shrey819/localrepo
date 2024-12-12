@@ -1,18 +1,36 @@
 \documentclass{article}
-\usepackage{array}
+\usepackage{graphicx} % For including graphics
+\usepackage{array}    % For advanced table formatting
 
 \begin{document}
 
-\begin{tabular}{|c|c|c|}
-  \hline
-  \textbf{Header 1} & \textbf{Header 2} & \textbf{Header 3} \\
-  \hline
-  Row 1, Col 1 & Row 1, Col 2 & Row 1, Col 3 \\
-  \hline
-  Row 2, Col 1 & Row 2, Col 2 & Row 2, Col 3 \\
-  \hline
-  Row 3, Col 1 & Row 3, Col 2 & Row 3, Col 3 \\
-  \hline
-\end{tabular}
+% Title for the table and graphic
+\section*{Table and Graphic Example}
+
+% Title for the table
+\subsection*{Sample Table}
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \multicolumn{3}{|c|}{\textbf{Merged Column Title}} \\ \hline
+        \textbf{Column 1} & \textbf{Column 2} & \textbf{Column 3} \\ \hline
+        Row 1, Col 1 & Row 1, Col 2 & Row 1, Col 3 \\ \hline
+        Row 2, Col 1 & Row 2, Col 2 & Row 2, Col 3 \\ \hline
+    \end{tabular}
+    \caption{This is a table with a merged title row.}
+\end{table}
+
+\vspace{1cm}
+
+% Title for the graphic
+\subsection*{Sample Graphic}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=200pt, height=200pt]{example-image} % Use an actual image path here
+    \caption{This is a sample graphic of size 200x200.}
+\end{figure}
 
 \end{document}
